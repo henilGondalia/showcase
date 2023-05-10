@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab'); 
+html, body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    font-family: 'Roboto Slab', serif;
+    overflow-y:hidden;
+}
+.Main {
+  text-align: center;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-wrap {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+.gallery-wrap .item{
+    height: 100%;
+    width: 150px;
+    background-color: aliceblue;
+    border: 1px solid black;
+    flex: 1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    transition: all 0.8s ease;
+}
+.gallery-wrap .item:hover {
+  flex: 7;
+}
+.wrap-effect-1 .item:first-of-type {
+      background-image: url('https://cdn.dribbble.com/users/729829/screenshots/4185141/galshir-cactus-coffee.png');
+    }
+    .wrap-effect-1 .item:nth-of-type(2) {
+      background-image: url('https://cdn.dribbble.com/users/729829/screenshots/6146136/galshir-tea-biscuit_2x.png');
+    }
+    .wrap-effect-1 .item:nth-of-type(3) {
+      background-image: url('https://cdn.dribbble.com/users/729829/screenshots/4473482/galshir-dog-walker.gif');
+    }
+    .wrap-effect-1 .item:nth-of-type(4) {
+      background-image: url('https://cdn.dribbble.com/users/729829/screenshots/5743606/gal-shir-scooter_2x.png');
+    }
+    .wrap-effect-1 .item:last-of-type {
+      background-image: url('https://cdn.dribbble.com/users/729829/screenshots/4738104/galshir-storytime.png');
+    }
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+  25% {
+    transform: rotate(10deg) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: rotate(-10deg) translate3d(0, 0, 0);
+  }
+  75% {
+    transform: rotate(5deg) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: rotate(0deg) translate3d(0, 0, 0)
+  }
+}
