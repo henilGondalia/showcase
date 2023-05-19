@@ -1,0 +1,1280 @@
+<html>
+  <head>
+    <meta charset="Utf-8" />
+    <meta name="viewpoint" content="width-device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Coffee House</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css"
+      integrity="sha512-SgaqKKxJDQ/tAUAAXzvxZz33rmn7leYDYfBP+YoMRSENhf3zJyx3SBASt/OfeQwBHA1nxMis7mM3EV/oYT6Fdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <section class="coffee-cup">
+        <div class="coffee-cup-mask">
+          <div class="cup">
+            <div class="hero">
+              <div id="header">
+                <div class="navigation">
+                  <a href="index.html" class="logo"
+                    ><img src="images/coffee-beans.png" alt=""
+                  /></a>
+                  <ul id="navigation">
+                    <li class="selected">
+                      <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                      <a href="product.html">Product</a>
+                    </li>
+                    <li>
+                      <a href="blog.html">Blog</a>
+                      <!-- <ul class="secondary">
+                        <li>
+                          <a href="singlepost.html">Single post</a>
+                        </li>
+                      </ul> -->
+                    </li>
+                    <li>
+                      <a href="contact.html">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="hero-mask">
+                <h1 class="heading">Welcome to our Coffee Shop!</h1>
+                <div class="btn"><a href="#">PRODUCTS</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="column">
+          <div class="about-inner">
+            <h5 style="color: #c0aa83; font-weight: 900">Who we are</h5>
+            <div class="sub-heading">About our shop</div>
+            <p>
+              Sed sagittis sodales lobortis. Curabitur in eleifend turpis, id
+              vehicula odio. Donec pulvinar tellus egetmagna aliquet ultricies.
+              Praesent gravida hendrerit ex, nec eleifend sem convallis vitae.
+            </p>
+            <img src="images/sign.png" alt="sign" />
+          </div>
+        </div>
+        <div class="column about-deeper">
+          <div class="about-pointer">
+            <img class="about-icon" src="images/about-icon-1.png" alt="" />
+            <h1 style="font-weight: 900">The best World sorts</h1>
+            <p>
+              Sed sagittis sodales lobortis. Curabitur in eleifend turpis, id
+              vehicula odio. Donec pulvinar tellus eget magna aliquet ultricies.
+            </p>
+          </div>
+          <div class="about-pointer">
+            <img class="about-icon" src="images/about-icon-2.png" alt="" />
+            <h1 style="font-weight: 900">Many points of sale</h1>
+            <p>
+              Sed sagittis sodales lobortis. Curabitur in eleifend turpis, id
+              vehicula odio. Donec pulvinar tellus eget magna aliquet ultricies.
+            </p>
+          </div>
+          <div class="about-pointer">
+            <img class="about-icon" src="images/about-icon-3.png" alt="" />
+            <h1 style="font-weight: 900">Professional baristas</h1>
+            <p>
+              Sed sagittis sodales lobortis. Curabitur in eleifend turpis, id
+              vehicula odio. Donec pulvinar tellus eget magna aliquet ultricies.
+            </p>
+          </div>
+          <div class="about-pointer">
+            <img class="about-icon" src="images/about-icon-4.png" alt="" />
+            <h1 style="font-weight: 900">24/7 fast delivery</h1>
+            <p>
+              Sed sagittis sodales lobortis. Curabitur in eleifend turpis, id
+              vehicula odio. Donec pulvinar tellus eget magna aliquet ultricies.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="product-detail">
+        <div class="product-header">
+          <h5>Choose your coffee</h5>
+          <h2 class="black_header">Recent Product</h2>
+          <p>Products</p>
+        </div>
+        <div class="product-tabs">
+          <div class="tab-menu">
+            <button class="tab-menu-link is-active" data-content="item-1">
+              <span data-title="item-1">All Product</span>
+            </button>
+            <button class="tab-menu-link" data-content="item-2">
+              <span data-title="item-2">Green coffee</span>
+            </button>
+            <button class="tab-menu-link" data-content="item-3">
+              <span data-title="item-3">Roasted coffee</span>
+            </button>
+            <button class="tab-menu-link" data-content="item-4">
+              <span data-title="item-4">Italian</span>
+            </button>
+          </div>
+          <div class="tab-bar">
+            <div class="tab-bar-content is-active" id="item-1">
+              <div class="swiper mySwiper container">
+                <div class="swiper-wrapper content">
+                  <div class="swiper-slide card">
+                    <div class="card-content">
+                      <article
+                        id="product-1"
+                        class="product"
+                        style="height: 558px"
+                      >
+                        <span class="onsale">Sale</span>
+                        <a href="#" class="photo">
+                          <img
+                            width="300"
+                            height="300"
+                            src="images/coffee_item1-300x300.jpg"
+                            alt=""
+                            srcset="
+                              images/coffee_item1-300x300.jpg 300w,
+                              images/coffee_item1-300x300.jpg 150w,
+                              images/coffee_item1-300x300.jpg 100w
+                            "
+                            sizes="(max-width: 300px) 100vw, 300px"
+                          />
+                        </a>
+                        <div class="description">
+                          <a href="#" class="header"
+                            ><h5>MyCoffeeShop Cup</h5></a
+                          >
+                          <div class="post_content entry-content">
+                            Duis et aliquam orci. Vivamus augue quam, ...
+                          </div>
+                          <h4 class="price color-main">
+                            <del
+                              ><span class="amount"
+                                ><span class="currencySymbol">$</span
+                                >23.00</span
+                              ></del
+                            >
+                            <ins
+                              ><span class="amount"
+                                ><span class="currencySymbol">$</span
+                                >19.00</span
+                              ></ins
+                            >
+                          </h4>
+                          <a
+                            rel="nofollow"
+                            href="#"
+                            data-quantity="1"
+                            data-product_id="2062"
+                            data-product_sku=""
+                            class="readmore_button"
+                            ><i
+                              class="fa fa-shopping-cart"
+                              aria-hidden="true"
+                            ></i
+                            >&nbsp;Read more</a
+                          >
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                  <div class="swiper-slide card">
+                    <div class="card-content">
+                      <article
+                        id="product-2"
+                        class="product"
+                        style="height: 558px"
+                      >
+                        <a href="#" class="photo">
+                          <img
+                            width="300"
+                            height="300"
+                            src="images/coffee_item2-300x300.jpg"
+                            alt=""
+                            srcset="
+                              images/coffee_item2-300x300.jpg 300w,
+                              images/coffee_item2-300x300.jpg 150w,
+                              images/coffee_item2-300x300.jpg 100w
+                            "
+                            sizes="(max-width: 300px) 100vw, 300px"
+                          />
+                        </a>
+                        <div class="description">
+                          <a href="#" class="header"
+                            ><h5>Ephiopian Aroma</h5></a
+                          >
+                          <div class="post_content entry-content">
+                            Duis et aliquam orci. Vivamus augue quam,, ...
+                          </div>
+                          <h4 class="price color-main">
+                            <ins
+                              ><span class="amount"
+                                ><span class="currencySymbol">$</span>9.00
+                                -</span
+                              ></ins
+                            >
+                            <ins
+                              ><span class="amount"
+                                ><span class="currencySymbol">$</span
+                                >19.99</span
+                              ></ins
+                            >
+                          </h4>
+                          <a
+                            rel="nofollow"
+                            href="#"
+                            data-quantity="1"
+                            data-product_id="2062"
+                            data-product_sku=""
+                            class="readmore_button"
+                            ><i
+                              class="fa fa-shopping-cart"
+                              aria-hidden="true"
+                            ></i
+                            >&nbsp;Read more</a
+                          >
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                  <div class="swiper-slide card">
+                    <div class="card-content">
+                      <article
+                        id="product-3"
+                        class="product"
+                        style="height: 558px"
+                      >
+                        <a href="#" class="photo">
+                          <img
+                            width="300"
+                            height="300"
+                            src="images/coffee_item3-300x300.jpg"
+                            alt=""
+                            srcset="
+                              images/coffee_item3-300x300.jpg 300w,
+                              images/coffee_item3-300x300.jpg 150w,
+                              images/coffee_item3-300x300.jpg 100w
+                            "
+                            sizes="(max-width: 300px) 100vw, 300px"
+                          />
+                        </a>
+                        <div class="description">
+                          <a href="#" class="header"><h5>Green Africana</h5></a>
+                          <div class="post_content entry-content">
+                            Duis et aliquam orci. Vivamus augue quam,, ...
+                          </div>
+                          <h4 class="price color-main">
+                            <ins
+                              ><span class="amount"
+                                ><span class="currencySymbol">$</span>9.00</span
+                              ></ins
+                            >
+                          </h4>
+                          <a
+                            rel="nofollow"
+                            href="#"
+                            data-quantity="1"
+                            data-product_id="2062"
+                            data-product_sku=""
+                            class="readmore_button"
+                            ><i
+                              class="fa fa-shopping-cart"
+                              aria-hidden="true"
+                            ></i
+                            >&nbsp;Read more</a
+                          >
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                  <div class="swiper-slide card">
+                    <div class="card-content">
+                      <article
+                        id="product-4"
+                        class="product"
+                        style="height: 558px"
+                      >
+                        <a href="#" class="photo">
+                          <img
+                            width="300"
+                            height="300"
+                            src="images/coffee_item4-300x300.jpg"
+                            alt=""
+                            srcset="
+                              images/coffee_item4-300x300.jpg 300w,
+                              images/coffee_item4-300x300.jpg 150w,
+                              images/coffee_item4-300x300.jpg 100w
+                            "
+                            sizes="(max-width: 300px) 100vw, 300px"
+                          />
+                        </a>
+                        <div class="description">
+                          <a href="#" class="header"
+                            ><h5>American Black Coffee</h5></a
+                          >
+                          <div class="post_content entry-content">
+                            Duis et aliquam orci. Vivamus augue quam,, ...
+                          </div>
+                          <h4 class="price color-main">
+                            <ins
+                              ><span class="amount"
+                                ><span class="currencySymbol">$</span
+                                >14.00</span
+                              ></ins
+                            >
+                          </h4>
+                          <a
+                            rel="nofollow"
+                            href="#"
+                            data-quantity="1"
+                            data-product_id="2062"
+                            data-product_sku=""
+                            class="readmore_button"
+                            ><i
+                              class="fa fa-shopping-cart"
+                              aria-hidden="true"
+                            ></i
+                            >&nbsp;Read more</a
+                          >
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                  <div class="swiper-slide card">
+                    <div class="card-content">
+                      <article
+                        id="product-5"
+                        class="product"
+                        style="height: 558px"
+                      >
+                        <a href="#" class="photo">
+                          <img
+                            width="300"
+                            height="300"
+                            src="images/coffee_item5-300x300.jpg"
+                            alt=""
+                            srcset="
+                              images/coffee_item5-300x300.jpg 300w,
+                              images/coffee_item5-300x300.jpg 150w,
+                              images/coffee_item5-300x300.jpg 100w
+                            "
+                            sizes="(max-width: 300px) 100vw, 300px"
+                          />
+                        </a>
+                        <div class="description">
+                          <a href="#" class="header"><h5>Ground coffee</h5></a>
+                          <div class="post_content entry-content">
+                            Duis et aliquam orci. Vivamus augue quam,, ...
+                          </div>
+                          <h4 class="price color-main">
+                            <ins
+                              ><span class="amount"
+                                ><span class="currencySymbol">$</span
+                                >13.44</span
+                              ></ins
+                            >
+                          </h4>
+                          <a
+                            rel="nofollow"
+                            href="#"
+                            data-quantity="1"
+                            data-product_id="2062"
+                            data-product_sku=""
+                            class="readmore_button"
+                            ><i
+                              class="fa fa-shopping-cart"
+                              aria-hidden="true"
+                            ></i
+                            >&nbsp;Read more</a
+                          >
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                  <div class="swiper-slide card">
+                    <div class="card-content">
+                      <article
+                        id="product-6"
+                        class="product"
+                        style="height: 558px"
+                      >
+                        <a href="#" class="photo">
+                          <img
+                            width="300"
+                            height="300"
+                            src="images/coffee_item6-300x300.jpg"
+                            alt=""
+                            srcset="
+                              images/coffee_item6-300x300.jpg 300w,
+                              images/coffee_item6-300x300.jpg 150w,
+                              images/coffee_item6-300x300.jpg 100w
+                            "
+                            sizes="(max-width: 300px) 100vw, 300px"
+                          />
+                        </a>
+                        <div class="description">
+                          <a href="#" class="header"><h5>Coffee bean</h5></a>
+                          <div class="post_content entry-content">
+                            Duis et aliquam orci. Vivamus augue quam,, ...
+                          </div>
+                          <h4 class="price color-main">
+                            <ins
+                              ><span class="amount"
+                                ><span class="currencySymbol">$</span
+                                >24.66</span
+                              ></ins
+                            >
+                          </h4>
+                          <a
+                            rel="nofollow"
+                            href="#"
+                            data-quantity="1"
+                            data-product_id="2062"
+                            data-product_sku=""
+                            class="readmore_button"
+                            ><i
+                              class="fa fa-shopping-cart"
+                              aria-hidden="true"
+                            ></i
+                            >&nbsp;Read more</a
+                          >
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                  <div class="swiper-slide card">
+                    <div class="card-content">
+                      <article
+                        id="product-7"
+                        class="product"
+                        style="height: 558px"
+                      >
+                        <a href="#" class="photo">
+                          <img
+                            width="300"
+                            height="300"
+                            src="images/coffee_item7-300x300.jpg"
+                            alt=""
+                            srcset="
+                              images/coffee_item7-300x300.jpg 300w,
+                              images/coffee_item7-300x300.jpg 150w,
+                              images/coffee_item7-300x300.jpg 100w
+                            "
+                            sizes="(max-width: 300px) 100vw, 300px"
+                          />
+                        </a>
+                        <div class="description">
+                          <a href="#" class="header"><h5>Accessory</h5></a>
+                          <div class="post_content entry-content">
+                            Duis et aliquam orci. Vivamus augue quam,, ...
+                          </div>
+                          <h4 class="price color-main">
+                            <ins
+                              ><span class="amount"
+                                ><span class="currencySymbol">$</span>4.66</span
+                              ></ins
+                            >
+                          </h4>
+                          <a
+                            rel="nofollow"
+                            href="#"
+                            data-quantity="1"
+                            data-product_id="2062"
+                            data-product_sku=""
+                            class="readmore_button"
+                            ><i
+                              class="fa fa-shopping-cart"
+                              aria-hidden="true"
+                            ></i
+                            >&nbsp;Read more</a
+                          >
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="tab-bar-content" id="item-2">
+              <div class="swiper mySwiper container">
+                <div class="swiper-wrapper content">
+                  <div class="swiper-slide card">
+                    <div class="card-content">
+                      <article
+                        id="product-1"
+                        class="product"
+                        style="height: 558px"
+                      >
+                        <a href="#" class="photo">
+                          <img
+                            width="300"
+                            height="300"
+                            src="images/coffee_item9-300x300.jpg"
+                            alt=""
+                            srcset="
+                              images/coffee_item9-300x300.jpg 300w,
+                              images/coffee_item9-300x300.jpg 150w,
+                              images/coffee_item9-300x300.jpg 100w
+                            "
+                            sizes="(max-width: 300px) 100vw, 300px"
+                          />
+                        </a>
+                        <div class="description">
+                          <a href="#" class="header"><h5>Coffee candy</h5></a>
+                          <div class="post_content entry-content">
+                            Duis et aliquam orci. Vivamus augue quam, ...
+                          </div>
+                          <h4 class="price color-main">
+                            <ins
+                              ><span class="amount"
+                                ><span class="currencySymbol">$</span>7.00</span
+                              ></ins
+                            >
+                          </h4>
+                          <a
+                            rel="nofollow"
+                            href="#"
+                            data-quantity="1"
+                            data-product_id="2062"
+                            data-product_sku=""
+                            class="readmore_button"
+                            ><i
+                              class="fa fa-shopping-cart"
+                              aria-hidden="true"
+                            ></i
+                            >&nbsp;Read more</a
+                          >
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                  <div class="swiper-slide card">
+                    <div class="card-content">
+                      <article
+                        id="product-2"
+                        class="product"
+                        style="height: 558px"
+                      >
+                        <a href="#" class="photo">
+                          <img
+                            width="300"
+                            height="300"
+                            src="images/coffee_item8-300x300.jpg"
+                            alt=""
+                            srcset="
+                              images/coffee_item8-300x300.jpg 300w,
+                              images/coffee_item8-300x300.jpg 150w,
+                              images/coffee_item8-300x300.jpg 100w
+                            "
+                            sizes="(max-width: 300px) 100vw, 300px"
+                          />
+                        </a>
+                        <div class="description">
+                          <a href="#" class="header"
+                            ><h5>Coffea Canephora</h5></a
+                          >
+                          <div class="post_content entry-content">
+                            Duis et aliquam orci. Vivamus augue quam,, ...
+                          </div>
+                          <h4 class="price color-main">
+                            <ins
+                              ><span class="amount"
+                                ><span class="currencySymbol">$</span>9.00
+                                -</span
+                              ></ins
+                            >
+                            <ins
+                              ><span class="amount"
+                                ><span class="currencySymbol">$</span
+                                >23.99</span
+                              ></ins
+                            >
+                          </h4>
+                          <a
+                            rel="nofollow"
+                            href="#"
+                            data-quantity="1"
+                            data-product_id="2062"
+                            data-product_sku=""
+                            class="readmore_button"
+                            ><i
+                              class="fa fa-shopping-cart"
+                              aria-hidden="true"
+                            ></i
+                            >&nbsp;Read more</a
+                          >
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                  <div class="swiper-slide card">
+                    <div class="card-content">
+                      <article
+                        id="product-3"
+                        class="product"
+                        style="height: 558px"
+                      >
+                        <a href="#" class="photo">
+                          <img
+                            width="300"
+                            height="300"
+                            src="images/coffee_item3-300x300.jpg"
+                            alt=""
+                            srcset="
+                              images/coffee_item3-300x300.jpg 300w,
+                              images/coffee_item3-300x300.jpg 150w,
+                              images/coffee_item3-300x300.jpg 100w
+                            "
+                            sizes="(max-width: 300px) 100vw, 300px"
+                          />
+                        </a>
+                        <div class="description">
+                          <a href="#" class="header"><h5>Green Africana</h5></a>
+                          <div class="post_content entry-content">
+                            Duis et aliquam orci. Vivamus augue quam,, ...
+                          </div>
+                          <h4 class="price color-main">
+                            <ins
+                              ><span class="amount"
+                                ><span class="currencySymbol">$</span>9.00</span
+                              ></ins
+                            >
+                          </h4>
+                          <a
+                            rel="nofollow"
+                            href="#"
+                            data-quantity="1"
+                            data-product_id="2062"
+                            data-product_sku=""
+                            class="readmore_button"
+                            ><i
+                              class="fa fa-shopping-cart"
+                              aria-hidden="true"
+                            ></i
+                            >&nbsp;Read more</a
+                          >
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                  <div class="swiper-slide card">
+                    <div class="card-content">
+                      <article
+                        id="product-4"
+                        class="product"
+                        style="height: 558px"
+                      >
+                        <a href="#" class="photo">
+                          <img
+                            width="300"
+                            height="300"
+                            src="images/coffee_item6-300x300.jpg"
+                            alt=""
+                            srcset="
+                              images/coffee_item6-300x300.jpg 300w,
+                              images/coffee_item6-300x300.jpg 150w,
+                              images/coffee_item6-300x300.jpg 100w
+                            "
+                            sizes="(max-width: 300px) 100vw, 300px"
+                          />
+                        </a>
+                        <div class="description">
+                          <a href="#" class="header"><h5>Coffee Been</h5></a>
+                          <div class="post_content entry-content">
+                            Duis et aliquam orci. Vivamus augue quam,, ...
+                          </div>
+                          <h4 class="price color-main">
+                            <ins
+                              ><span class="amount"
+                                ><span class="currencySymbol">$</span
+                                >14.00</span
+                              ></ins
+                            >
+                          </h4>
+                          <a
+                            rel="nofollow"
+                            href="#"
+                            data-quantity="1"
+                            data-product_id="2062"
+                            data-product_sku=""
+                            class="readmore_button"
+                            ><i
+                              class="fa fa-shopping-cart"
+                              aria-hidden="true"
+                            ></i
+                            >&nbsp;Read more</a
+                          >
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="tab-bar-content" id="item-3">
+              <div class="swiper mySwiper container">
+                <div class="swiper-wrapper content">
+                  <div class="swiper-slide card">
+                    <div class="card-content">
+                      <article
+                        id="product-1"
+                        class="product"
+                        style="height: 558px"
+                      >
+                        <a href="#" class="photo">
+                          <img
+                            width="300"
+                            height="300"
+                            src="images/coffee_item9-300x300.jpg"
+                            alt=""
+                            srcset="
+                              images/coffee_item9-300x300.jpg 300w,
+                              images/coffee_item9-300x300.jpg 150w,
+                              images/coffee_item9-300x300.jpg 100w
+                            "
+                            sizes="(max-width: 300px) 100vw, 300px"
+                          />
+                        </a>
+                        <div class="description">
+                          <a href="#" class="header"><h5>Coffee candy</h5></a>
+                          <div class="post_content entry-content">
+                            Duis et aliquam orci. Vivamus augue quam, ...
+                          </div>
+                          <h4 class="price color-main">
+                            <ins
+                              ><span class="amount"
+                                ><span class="currencySymbol">$</span>7.00</span
+                              ></ins
+                            >
+                          </h4>
+                          <a
+                            rel="nofollow"
+                            href="#"
+                            data-quantity="1"
+                            data-product_id="2062"
+                            data-product_sku=""
+                            class="readmore_button"
+                            ><i
+                              class="fa fa-shopping-cart"
+                              aria-hidden="true"
+                            ></i
+                            >&nbsp;Read more</a
+                          >
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                  <div class="swiper-slide card">
+                    <div class="card-content">
+                      <article
+                        id="product-2"
+                        class="product"
+                        style="height: 558px"
+                      >
+                        <a href="#" class="photo">
+                          <img
+                            width="300"
+                            height="300"
+                            src="images/coffee_item8-300x300.jpg"
+                            alt=""
+                            srcset="
+                              images/coffee_item8-300x300.jpg 300w,
+                              images/coffee_item8-300x300.jpg 150w,
+                              images/coffee_item8-300x300.jpg 100w
+                            "
+                            sizes="(max-width: 300px) 100vw, 300px"
+                          />
+                        </a>
+                        <div class="description">
+                          <a href="#" class="header"
+                            ><h5>Coffea Canephora</h5></a
+                          >
+                          <div class="post_content entry-content">
+                            Duis et aliquam orci. Vivamus augue quam,, ...
+                          </div>
+                          <h4 class="price color-main">
+                            <ins
+                              ><span class="amount"
+                                ><span class="currencySymbol">$</span>9.00
+                                -</span
+                              ></ins
+                            >
+                            <ins
+                              ><span class="amount"
+                                ><span class="currencySymbol">$</span
+                                >23.99</span
+                              ></ins
+                            >
+                          </h4>
+                          <a
+                            rel="nofollow"
+                            href="#"
+                            data-quantity="1"
+                            data-product_id="2062"
+                            data-product_sku=""
+                            class="readmore_button"
+                            ><i
+                              class="fa fa-shopping-cart"
+                              aria-hidden="true"
+                            ></i
+                            >&nbsp;Read more</a
+                          >
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                  <div class="swiper-slide card">
+                    <div class="card-content">
+                      <article
+                        id="product-3"
+                        class="product"
+                        style="height: 558px"
+                      >
+                        <a href="#" class="photo">
+                          <img
+                            width="300"
+                            height="300"
+                            src="images/coffee_item3-300x300.jpg"
+                            alt=""
+                            srcset="
+                              images/coffee_item3-300x300.jpg 300w,
+                              images/coffee_item3-300x300.jpg 150w,
+                              images/coffee_item3-300x300.jpg 100w
+                            "
+                            sizes="(max-width: 300px) 100vw, 300px"
+                          />
+                        </a>
+                        <div class="description">
+                          <a href="#" class="header"><h5>Green Africana</h5></a>
+                          <div class="post_content entry-content">
+                            Duis et aliquam orci. Vivamus augue quam,, ...
+                          </div>
+                          <h4 class="price color-main">
+                            <ins
+                              ><span class="amount"
+                                ><span class="currencySymbol">$</span>9.00</span
+                              ></ins
+                            >
+                          </h4>
+                          <a
+                            rel="nofollow"
+                            href="#"
+                            data-quantity="1"
+                            data-product_id="2062"
+                            data-product_sku=""
+                            class="readmore_button"
+                            ><i
+                              class="fa fa-shopping-cart"
+                              aria-hidden="true"
+                            ></i
+                            >&nbsp;Read more</a
+                          >
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                  <div class="swiper-slide card">
+                    <div class="card-content">
+                      <article
+                        id="product-4"
+                        class="product"
+                        style="height: 558px"
+                      >
+                        <a href="#" class="photo">
+                          <img
+                            width="300"
+                            height="300"
+                            src="images/coffee_item6-300x300.jpg"
+                            alt=""
+                            srcset="
+                              images/coffee_item6-300x300.jpg 300w,
+                              images/coffee_item6-300x300.jpg 150w,
+                              images/coffee_item6-300x300.jpg 100w
+                            "
+                            sizes="(max-width: 300px) 100vw, 300px"
+                          />
+                        </a>
+                        <div class="description">
+                          <a href="#" class="header"><h5>Coffee Been</h5></a>
+                          <div class="post_content entry-content">
+                            Duis et aliquam orci. Vivamus augue quam,, ...
+                          </div>
+                          <h4 class="price color-main">
+                            <ins
+                              ><span class="amount"
+                                ><span class="currencySymbol">$</span
+                                >14.00</span
+                              ></ins
+                            >
+                          </h4>
+                          <a
+                            rel="nofollow"
+                            href="#"
+                            data-quantity="1"
+                            data-product_id="2062"
+                            data-product_sku=""
+                            class="readmore_button"
+                            ><i
+                              class="fa fa-shopping-cart"
+                              aria-hidden="true"
+                            ></i
+                            >&nbsp;Read more</a
+                          >
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="tab-bar-content" id="item-4">
+              <div class="swiper mySwiper container">
+                <div class="swiper-wrapper content">
+                  <div class="swiper-slide card">
+                    <div class="card-content">
+                      <article
+                        id="product-2"
+                        class="product"
+                        style="height: 558px"
+                      >
+                        <a href="#" class="photo">
+                          <img
+                            width="300"
+                            height="300"
+                            src="images/coffee_item8-300x300.jpg"
+                            alt=""
+                            srcset="
+                              images/coffee_item8-300x300.jpg 300w,
+                              images/coffee_item8-300x300.jpg 150w,
+                              images/coffee_item8-300x300.jpg 100w
+                            "
+                            sizes="(max-width: 300px) 100vw, 300px"
+                          />
+                        </a>
+                        <div class="description">
+                          <a href="#" class="header"
+                            ><h5>Coffea Canephora</h5></a
+                          >
+                          <div class="post_content entry-content">
+                            Duis et aliquam orci. Vivamus augue quam,, ...
+                          </div>
+                          <h4 class="price color-main">
+                            <ins
+                              ><span class="amount"
+                                ><span class="currencySymbol">$</span>9.00
+                                -</span
+                              ></ins
+                            >
+                            <ins
+                              ><span class="amount"
+                                ><span class="currencySymbol">$</span
+                                >23.99</span
+                              ></ins
+                            >
+                          </h4>
+                          <a
+                            rel="nofollow"
+                            href="#"
+                            data-quantity="1"
+                            data-product_id="2062"
+                            data-product_sku=""
+                            class="readmore_button"
+                            ><i
+                              class="fa fa-shopping-cart"
+                              aria-hidden="true"
+                            ></i
+                            >&nbsp;Read more</a
+                          >
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                  <div class="swiper-slide card">
+                    <div class="card-content">
+                      <article
+                        id="product-3"
+                        class="product"
+                        style="height: 558px"
+                      >
+                        <a href="#" class="photo">
+                          <img
+                            width="300"
+                            height="300"
+                            src="images/coffee_item3-300x300.jpg"
+                            alt=""
+                            srcset="
+                              images/coffee_item3-300x300.jpg 300w,
+                              images/coffee_item3-300x300.jpg 150w,
+                              images/coffee_item3-300x300.jpg 100w
+                            "
+                            sizes="(max-width: 300px) 100vw, 300px"
+                          />
+                        </a>
+                        <div class="description">
+                          <a href="#" class="header"><h5>Green Africana</h5></a>
+                          <div class="post_content entry-content">
+                            Duis et aliquam orci. Vivamus augue quam,, ...
+                          </div>
+                          <h4 class="price color-main">
+                            <ins
+                              ><span class="amount"
+                                ><span class="currencySymbol">$</span>9.00</span
+                              ></ins
+                            >
+                          </h4>
+                          <a
+                            rel="nofollow"
+                            href="#"
+                            data-quantity="1"
+                            data-product_id="2062"
+                            data-product_sku=""
+                            class="readmore_button"
+                            ><i
+                              class="fa fa-shopping-cart"
+                              aria-hidden="true"
+                            ></i
+                            >&nbsp;Read more</a
+                          >
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="branches">
+        <div class="locations">
+          <div class="locations_wrapper">
+            <h3 class="black_header">Sale and delivery points</h3>
+            <p style="margin-bottom: 5%;">
+              Sed sagittis sodales lobortis. Curabitur in eleifend
+              turpis, id vehicula odio. Donec pulvinartellus eget magna
+              aliquet ultricies. Praesent gravida hendreritex, nec
+              eleifend semconvallis vitae.
+            </p>
+            <h4 class="primary-header">Where buy our coffee:</h4>
+            <div class="point_wrapper">
+              <ul class="ul-arrow">
+                <li style="text-align: left">
+                  <a class="black" href="#"
+                    ><strong>Canada</strong> (23)</a
+                  >
+                </li>
+                <li style="text-align: left">
+                  <a class="black" href="#"
+                    ><strong>USA</strong> (67)</a
+                  >
+                </li>
+                <li style="text-align: left">
+                  <a class="black" href="#"
+                    ><strong>Mexico</strong> (10)</a
+                  >
+                </li>
+              </ul>
+              <ul class="ul-arrow">
+                <li style="text-align: left">
+                  <a class="black" href="#"
+                    ><strong>Canada</strong> (23)</a
+                  >
+                </li>
+                <li style="text-align: left">
+                  <a class="black" href="#"
+                    ><strong>USA</strong> (67)</a
+                  >
+                </li>
+                <li style="text-align: left">
+                  <a class="black" href="#"
+                    ><strong>Mexico</strong> (10)</a
+                  >
+                </li>
+              </ul>
+              <ul class="ul-arrow">
+                <li style="text-align: left">
+                  <a class="black" href="#"
+                    ><strong>Canada</strong> (23)</a
+                  >
+                </li>
+                <li style="text-align: left">
+                  <a class="black" href="#"
+                    ><strong>USA</strong> (67)</a
+                  >
+                </li>
+                <li style="text-align: left">
+                  <a class="black" href="#"
+                    ><strong>Mexico</strong> (10)</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div>><div>fvsdfgs</div></div>
+        </div>
+
+        <div>
+          <div
+            class="locations"
+          >
+            <div class="locations_wrapper">
+              <h3 class="header">Sale and delivery points</h3>
+              <p style="text-align: left">
+                Sed sagittis sodales lobortis. Curabitur in eleifend
+                turpis, id vehicula odio. Donec pulvinartellus eget magna
+                aliquet ultricies. Praesent gravida hendreritex, nec
+                eleifend semconvallis vitae.
+              </p>
+              <h4 class="header">Where buy our coffee:</h4>
+              </div>
+              <div class="pin_point">
+                  <div class="point_wrapper">
+                    <ul class="ul-arrow">
+                      <li style="text-align: left">
+                        <a class="black" href="#"
+                          ><strong>Canada</strong> (23)</a
+                        >
+                      </li>
+                      <li style="text-align: left">
+                        <a class="black" href="#"
+                          ><strong>USA</strong> (67)</a
+                        >
+                      </li>
+                      <li style="text-align: left">
+                        <a class="black" href="#"
+                          ><strong>Mexico</strong> (10)</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="pin_point">
+                  <div class="point_wrapper">
+                    <ul class="ul-arrow">
+                      <li style="text-align: left">
+                        <a class="black" href="#"
+                          ><strong>Brazil</strong> (96)</a
+                        >
+                      </li>
+                      <li style="text-align: left">
+                        <a class="black" href="#"
+                          ><strong>Argentina</strong> (43)</a
+                        >
+                      </li>
+                      <li style="text-align: left">
+                        <a class="black" href="#"
+                          ><strong>Europe</strong> (379)</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="pin_point">
+                  <div class="point_wrapper">
+                    <ul class="ul-arrow">
+                      <li style="text-align: left">
+                        <a class="black" href="#"
+                          ><strong>Russia</strong> (2)</a
+                        >
+                      </li>
+                      <li style="text-align: left">
+                        <a class="black" href="#"
+                          ><strong>Asia</strong> (26)</a
+                        >
+                      </li>
+                      <li style="text-align: left">
+                        <a class="black" href="#"
+                          ><strong>Australia</strong> (71)</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="vc_column-inner">
+                <div class="wpb_wrapper">
+                  <div class="btn-wrap">
+                    <a
+                      href="#"
+                      class="btn btn-default transform-default color-text-default color-hover-default"
+                      id="like_sc_button_383293763"
+                      >View all points</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="wpb_animate_when_almost_visible wpb_zoomIn zoomIn wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-12 wpb_start_animation animated"
+          >
+            <div class="vc_column-inner">
+              <div class="wpb_wrapper">
+                <div class="wpb_single_image wpb_content_element vc_align_left">
+                  <figure class="wpb_wrapper vc_figure">
+                    <div class="vc_single_image-wrapper vc_box_border_grey">
+                      <img
+                        width="751"
+                        height="375"
+                        src="http://coffeeking.like-themes.com/wp-content/uploads/2017/09/map.png"
+                        class="vc_single_image-img attachment-full"
+                        alt=""
+                        srcset="
+                          http://coffeeking.like-themes.com/wp-content/uploads/2017/09/map.png         751w,
+                          http://coffeeking.like-themes.com/wp-content/uploads/2017/09/map-300x150.png 300w,
+                          http://coffeeking.like-themes.com/wp-content/uploads/2017/09/map-600x300.png 600w
+                        "
+                        sizes="(max-width: 751px) 100vw, 751px"
+                      />
+                    </div>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/mobile.js" type="text/javascript"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+  </body>
+</html>

@@ -26,9 +26,8 @@ body {
 }
 .gallery-wrap .item{
     height: 100%;
-    width: 150px;
+    width: 250px;
     background-color: aliceblue;
-    border: 1px solid black;
     flex: 1;
     background-position: center;
     background-size: cover;
@@ -38,21 +37,36 @@ body {
 .gallery-wrap .item:hover {
   flex: 7;
 }
-.wrap-effect-1 .item:first-of-type {
-      background-image: url('https://cdn.dribbble.com/users/729829/screenshots/4185141/galshir-cactus-coffee.png');
-    }
-    .wrap-effect-1 .item:nth-of-type(2) {
-      background-image: url('https://cdn.dribbble.com/users/729829/screenshots/6146136/galshir-tea-biscuit_2x.png');
-    }
-    .wrap-effect-1 .item:nth-of-type(3) {
-      background-image: url('https://cdn.dribbble.com/users/729829/screenshots/4473482/galshir-dog-walker.gif');
-    }
-    .wrap-effect-1 .item:nth-of-type(4) {
-      background-image: url('https://cdn.dribbble.com/users/729829/screenshots/5743606/gal-shir-scooter_2x.png');
-    }
-    .wrap-effect-1 .item:last-of-type {
-      background-image: url('https://cdn.dribbble.com/users/729829/screenshots/4738104/galshir-storytime.png');
-    }
+.content-overlay{
+  background: rgba(0,0,0,0.7);
+  position: relative;
+  height: 10%;
+  width: 100%;
+  bottom: 10px;
+  right: 15px;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+.gallery-wrap .item:hover .content-overlay{
+  opacity: 1;
+}
+.wrap-effect .item:first-of-type {
+  background-image: url('./assets/Bread-Shop.png');
+}
+.wrap-effect .item:nth-of-type(2) {
+  background-image: url('https://cdn.dribbble.com/users/729829/screenshots/6146136/galshir-tea-biscuit_2x.png');
+}
+.wrap-effect .item:nth-of-type(3) {
+  background-image: url('https://cdn.dribbble.com/users/729829/screenshots/4473482/galshir-dog-walker.gif');
+}
+.wrap-effect .item:nth-of-type(4) {
+  background-image: url('https://cdn.dribbble.com/users/729829/screenshots/5743606/gal-shir-scooter_2x.png');
+}
+.wrap-effect .item:last-of-type {
+  background-image: url('https://cdn.dribbble.com/users/729829/screenshots/4738104/galshir-storytime.png');
+}
 
 @keyframes rotate {
   0% {
