@@ -35,14 +35,31 @@ function activeTab(item) {
 	document.querySelector("#" + content).classList.add("is-active");
 	btnTarget.classList.add("is-active");
 }
+
+// scroll to top
+let mybutton = document.getElementById("back_to_top_button");
+
+function scrollFunction() {
+	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+	  mybutton.classList.add("show");
+	} else {
+	  mybutton.classList.remove("show");
+	}
+}
+window.onscroll = function() {scrollFunction()};
+
+function topFunction() {
+	window.scrollTo({top: 0, behavior: 'smooth'});
+	// document.body.scrollTop = 0;
+	// document.documentElement.scrollTop = 0;
+}
+mybutton.addEventListener("click", topFunction);
   
 // Swiper -->
 var swiper = new Swiper(".mySwiper", {
-	slidesPerView: 3,
-	spaceBetween: 30,
-	slidesPerGroup: 3,
 	loop: true,
 	loopFillGroupWithBlank: true,
+	allowTouchMove: true,
 	pagination: {
 		el: ".swiper-pagination",
 		clickable: true,
@@ -51,20 +68,51 @@ var swiper = new Swiper(".mySwiper", {
 		nextEl: ".swiper-button-next",
 		prevEl: ".swiper-button-prev",
 	},
+	breakpoints: {
+		1200: {
+		  slidesPerView: 3,
+		  loopedSlides: 3,
+		  spaceBetween: 30
+		},
+		1024: {
+		  slidesPerView: 2,
+		  loopedSlides: 2,
+		  spaceBetween: 30
+		},
+		768: {
+		  slidesPerView: 1,
+		  loopedSlides: 1,
+		  spaceBetween: 30
+		},
+		675: {
+		  slidesPerView: 1,
+		  loopedSlides: 1,
+		  spaceBetween: 20,
+		}
+	},
+	on: {
+		init: function() {
+				checkArrow();
+		},
+		resize: function () {
+				checkArrow();
+		}
+	}
 });
 
-var swiper = new Swiper(".mySwiper1", {
-	slidesPerView: 3,
-	spaceBetween: 30,
-	slidesPerGroup: 3,
-	loop: true,
-	loopFillGroupWithBlank: true,
-	pagination: {
-		el: ".swiper-pagination",
-		clickable: true,
-	},
-	navigation: {
-		nextEl: ".swiper-button-next",
-		prevEl: ".swiper-button-prev",
-	},
-});
+function checkArrow() {
+	var swiperPrev = document.querySelector('.swiper-button-prev');
+	var swiperNext = document.querySelector('.swiper-button-next');
+	let width = screen.width;
+	console.log('Success', width);
+	if ( width > 768  ) {
+	  swiperPrev.style.visibility = 'visible';
+	  swiperNext.style.visibility = 'visible';
+	} else {
+	  swiperPrev.style.visibility = 'hidden';
+	  swiperNext.style.visibility = 'hidden';
+	}
+  }
+
+// intialize aos
+AOS.init();

@@ -1,7 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/kanit');
 :root {
     --primary : #c0aa83;
-    --swiper-navigation-sides-offset: 150px;
+    --swiper-navigation-sides-offset: 8vw;
 }
 body {
     margin: 0;
@@ -9,6 +9,7 @@ body {
     background-color: #f5f5f5;
     cursor: pointer;
     font-family: 'Kanit', sans-serif;
+    overflow-x:hidden;
 }
 a,ins {
     text-decoration: none;
@@ -33,15 +34,69 @@ img {
     color: var(--primary);
     font-weight: 800;
 }
+.secendory_button {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 3% 6%;
+    font-size: 14px;
+    font-weight: 800;
+    border: 3px solid #000000;
+}
+.secendory_button:hover {
+    background-color: #fff;
+    color: #000000;
+    border: 3px solid #000000;
+}
+.btn-border {
+    border: 3px solid var(--primary);
+}
+#back_to_top_button {
+    display: block;
+    background-color: var(--primary);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  #back_to_top_button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+  #back_to_top_button:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #back_to_top_button:active {
+    background-color: #555;
+  }
+  #back_to_top_button.show {
+    opacity: 1;
+    visibility: visible;
+  }
 /*----------------------------------------header-styles---------------------------------------*/
 .coffee-cup {
     width: 100%;
-    height: 99%;
     background: url("../images/coffee.png") no-repeat;
     background-size: cover;
     position: relative;
     margin-bottom: -22px;
     overflow: hidden;
+}
+.coffee-cup-mask {
+    height: 770px;
 }
 .cup {
     width: 99%;
@@ -99,7 +154,7 @@ canvas{
 }
 #header div ul li a {
     color: #7a6666;
-	font-family: lato-regular-webfont;
+	font-family: 'Kanit', sans-serif;
 	font-size: 15px;
 	font-weight: normal;
 	line-height: 15px;
@@ -116,7 +171,7 @@ canvas{
 }
 #header div ul li ul li a {
 	color: var(--primary);
-	font-family: lato-regular-webfont;
+	font-family: 'Kanit', sans-serif;
 	font-size: 15px;
 	font-weight: normal;
 	line-height: 15px;
@@ -132,7 +187,8 @@ canvas{
     font-weight: 700;
     line-height: 175px;
     color: #ffffff;
-    font-size: 175px;
+    /* font-size: 175px; */
+    font-size: 10vw;
     margin-bottom: 40px;
     text-shadow: 20px 20px 0px rgb(0 0 0 / 25%);
 }
@@ -180,7 +236,7 @@ canvas{
 }
     /*----------------------------------------Product style---------------------------------------*/
 .product-header h5{
-    margin-top: 5%;
+    margin-top: 8%;
     color: var(--primary);
     font-size: 24px;
     font-weight: 800;
@@ -207,7 +263,7 @@ canvas{
     transform: translate(-50%,-50%);
 }
 .product-tabs {
-    margin: 0 auto;
+    margin: 0 auto 6%;
     max-width: 100%;
     height: auto;
     margin-top: -3rem;
@@ -373,20 +429,220 @@ span.onsale:before {
     padding: 3% 6%;
     font-size: 14px;
     font-weight: 800;
+    text-align:center;
 }
 .readmore_button:hover {
     background-color: #000000;
+    border: none;
 }
 .locations {
-    display: flex;
     width: 100%;
     background-color:#ffffff;
 }
-.locations div {
+.locations > div {
     width: 50%;
-    padding: 5% 10%;
+    padding: 5% 0% 5% 10%;
     text-align: start;
 }
 .locations .locations_wrapper h3{
     margin-bottom: 0;
+}
+.locations .locations_wrapper .map_wrapper {
+    overflow: hidden;
+}
+.point_wrapper {
+    display: flex;
+    padding: 0%;
+    width: auto;
+    margin-left: -4%;
+    margin-bottom: 4%;
+}
+ul.ul-arrow.ul-arrow li{
+    list-style: none;
+    color: #242424;
+    line-height: 30px;
+}
+ul.ul-arrow.ul-arrow li a{
+    color: #000000;
+    font-size: 18px;
+}
+ul.ul-arrow.ul-arrow li:before{
+    content: "\f105";
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 100;
+    position: absolute;
+    margin: 5px 0 0 -16px
+}
+.location_header {
+    margin-bottom: 6px;
+    font-size: 30px;
+}
+.view_all {
+    padding: 2% 5%;
+}
+.dealer-info {
+    /* display: flex; */
+    width: 80%;
+    padding: 8% 10%;
+    background-color:#ffffff;
+    border-top: 1px solid #e9e4e4;
+}
+.dealer-info .dealer_wrapper {
+    /* width: 50%; */
+    text-align: left;
+}
+.background_cup {
+    background-image: url("../images/coffee-cup.png") !important;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+}
+.background_cup h3,.dealer_wrapper h3{
+    margin:0;
+    font-weight: 900;
+    color: #242424;
+    font-family: 'Kanit', sans-serif;
+}
+.main_header {
+    color: var(--primary) !important;
+    line-height: 95px;
+}
+  /*-----------------------------------------------footer------------------------------------------------------*/
+.footer_area {
+    color: #fff;
+    padding-top: 220px;
+    background: url("../images/coffee-beans-bg.png") center;
+    background-size: cover;
+    display: flex;
+    width: fit-content;
+    padding: 5% 10%;
+    text-align: left;
+}
+.footer_area li {
+    list-style: none;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+.footer_about {
+    width: 35%;
+}
+.footer_contact{
+    width: 40%;
+    padding-right: 8%;
+}
+.about_desc {
+    width: 65%;
+    text-align: justify;
+}
+.social-icons-list {
+    margin-left: -2rem;
+}
+.social-icons-list li i {
+    color: var(--primary);
+    font-size: 20px;
+    margin-right: 20px;
+}
+.footer_area li a{
+    color: #fff;
+}
+.footer-social a i {
+    color:#ffffff;
+    font-size: 20px;
+    margin-right: 0.5rem;
+}
+/* @media (min-width:320px) and (max-width: 480px) {  */
+    /* smartphones, iPhone, portrait 480x320 phones */ 
+   
+/* }
+@media (min-width:481px) {  */
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+   
+/* }
+@media (min-width:641px) and (max-width: 960px) { 
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+    /* .dealer-info{
+        display: block;
+    }
+    .dealer-info .dealer_wrapper{
+        width: 100%;
+    }  
+} */
+
+@media (min-width:961px) and (max-width: 1024px) {
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+    .about{
+        display: block;
+    }
+    .about .column {
+        width: fit-content;
+        margin-top: 2rem;
+    }
+    .about-inner{
+        text-align: justify;
+    } 
+    .about-deeper {
+        padding: 5% 10% 5% 10%;
+    }
+    .dealer-btn-wrapper {
+        width: 100%;
+    }
+    .dealer-btn-wrapper a {
+        width: 35%;
+        font-size: 25px;
+        display: inline-block;
+        text-align: center;
+    }
+    .footer-social-links {
+        display: none;
+    }
+    .footer_about {
+        width: 50%;
+    }
+    .footer_contact{
+        width: 50%;
+        padding-right: 0;
+    }
+    .about_desc {
+        width: 65%;
+        text-align: justify;
+    }
+    .locations > div {
+        width: 80%;
+    }
+}
+
+/* @media (min-width:1025px) and (max-width: 1280px) {  */
+    /* big landscape tablets, laptops, and desktops */ 
+/* } */
+
+@media (min-width:1281px) { 
+    /* hi-res laptops and desktops */ 
+    .coffee-cup-mask {
+        height: 850px;
+    }
+    .dealer-info{
+        display: flex;
+    }
+    .dealer-info .dealer_wrapper:first-of-type{
+        width: 100%;
+    }
+    .dealer-info .dealer_wrapper:last-of-type {
+        width: 70%;
+    }
+    .locations {
+        display: flex;
+    }
+    .locations > div {
+        width: 50%;
+    }
+    .locations > div.map_wrapper {
+        padding: 9% 0px;
+    }
+    .footer_contact{
+        padding-right: 0;
+    }
 }

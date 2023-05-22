@@ -29,40 +29,35 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <div class="container">
+      <!-- Back to top button -->
+      <a id="back_to_top_button"></a>
       <section class="coffee-cup">
         <div class="coffee-cup-mask">
           <div class="cup">
             <div class="hero">
               <div id="header">
-                <div class="navigation">
+                <div class="navigation" data-aos="fade-up">
                   <a href="index.html" class="logo"
                     ><img src="images/coffee-beans.png" alt=""
                   /></a>
                   <ul id="navigation">
                     <li class="selected">
-                      <a href="index.html">Home</a>
+                      <a href="#about">About</a>
                     </li>
                     <li>
-                      <a href="product.html">Product</a>
+                      <a href="#product_detail">Product</a>
                     </li>
                     <li>
-                      <a href="blog.html">Blog</a>
-                      <!-- <ul class="secondary">
-                        <li>
-                          <a href="singlepost.html">Single post</a>
-                        </li>
-                      </ul> -->
-                    </li>
-                    <li>
-                      <a href="contact.html">Contact</a>
+                      <a href="#branch">Contact</a>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="hero-mask">
+              <div class="hero-mask" data-aos="fade-up">
                 <h1 class="heading">Welcome to our Coffee Shop!</h1>
                 <div class="btn"><a href="#">PRODUCTS</a></div>
               </div>
@@ -70,9 +65,9 @@
           </div>
         </div>
       </section>
-      <section class="about">
-        <div class="column">
-          <div class="about-inner">
+      <section class="about" id="about">
+        <div class="column" >
+          <div class="about-inner" data-aos="fade-right">
             <h5 style="color: #c0aa83; font-weight: 900">Who we are</h5>
             <div class="sub-heading">About our shop</div>
             <p>
@@ -84,7 +79,7 @@
           </div>
         </div>
         <div class="column about-deeper">
-          <div class="about-pointer">
+          <div class="about-pointer"  data-aos="fade-left">
             <img class="about-icon" src="images/about-icon-1.png" alt="" />
             <h1 style="font-weight: 900">The best World sorts</h1>
             <p>
@@ -92,7 +87,7 @@
               vehicula odio. Donec pulvinar tellus eget magna aliquet ultricies.
             </p>
           </div>
-          <div class="about-pointer">
+          <div class="about-pointer"  data-aos="fade-left">
             <img class="about-icon" src="images/about-icon-2.png" alt="" />
             <h1 style="font-weight: 900">Many points of sale</h1>
             <p>
@@ -100,7 +95,7 @@
               vehicula odio. Donec pulvinar tellus eget magna aliquet ultricies.
             </p>
           </div>
-          <div class="about-pointer">
+          <div class="about-pointer"  data-aos="fade-left">
             <img class="about-icon" src="images/about-icon-3.png" alt="" />
             <h1 style="font-weight: 900">Professional baristas</h1>
             <p>
@@ -108,7 +103,7 @@
               vehicula odio. Donec pulvinar tellus eget magna aliquet ultricies.
             </p>
           </div>
-          <div class="about-pointer">
+          <div class="about-pointer"  data-aos="fade-left">
             <img class="about-icon" src="images/about-icon-4.png" alt="" />
             <h1 style="font-weight: 900">24/7 fast delivery</h1>
             <p>
@@ -118,13 +113,13 @@
           </div>
         </div>
       </section>
-      <section class="product-detail">
-        <div class="product-header">
+      <section class="product-detail" id="product_detail">
+        <div class="product-header" data-aos="zoom-in">
           <h5>Choose your coffee</h5>
           <h2 class="black_header">Recent Product</h2>
           <p>Products</p>
         </div>
-        <div class="product-tabs">
+        <div class="product-tabs" data-aos="zoom-in" data-aos-offset="500">
           <div class="tab-menu">
             <button class="tab-menu-link is-active" data-content="item-1">
               <span data-title="item-1">All Product</span>
@@ -1083,197 +1078,171 @@
         </div>
       </section>
 
-      <section class="branches">
+      <section class="branches" id="branch">
         <div class="locations">
-          <div class="locations_wrapper">
-            <h3 class="black_header">Sale and delivery points</h3>
-            <p style="margin-bottom: 5%;">
-              Sed sagittis sodales lobortis. Curabitur in eleifend
-              turpis, id vehicula odio. Donec pulvinartellus eget magna
-              aliquet ultricies. Praesent gravida hendreritex, nec
-              eleifend semconvallis vitae.
+          <div class="locations_wrapper" >
+            <h3 class="black_header" data-aos="fade-right">Sale and delivery points</h3>
+            <p style="margin-bottom: 5%" data-aos="fade-right">
+              Sed sagittis sodales lobortis. Curabitur in eleifend turpis, id
+              vehicula odio. Donec pulvinartellus eget magna aliquet ultricies.
+              Praesent gravida hendreritex, nec eleifend semconvallis vitae.
             </p>
-            <h4 class="primary-header">Where buy our coffee:</h4>
-            <div class="point_wrapper">
+            <h4 class="primary-header location_header" data-aos="fade-right">
+              Where buy our coffee:
+            </h4>
+            <div class="point_wrapper" data-aos="fade-right">
               <ul class="ul-arrow">
                 <li style="text-align: left">
-                  <a class="black" href="#"
-                    ><strong>Canada</strong> (23)</a
-                  >
+                  <a class="black" href="#"><strong>Canada</strong> (23)</a>
                 </li>
                 <li style="text-align: left">
-                  <a class="black" href="#"
-                    ><strong>USA</strong> (67)</a
-                  >
+                  <a class="black" href="#"><strong>USA</strong> (67)</a>
                 </li>
                 <li style="text-align: left">
-                  <a class="black" href="#"
-                    ><strong>Mexico</strong> (10)</a
-                  >
+                  <a class="black" href="#"><strong>Mexico</strong> (10)</a>
                 </li>
               </ul>
               <ul class="ul-arrow">
                 <li style="text-align: left">
-                  <a class="black" href="#"
-                    ><strong>Canada</strong> (23)</a
-                  >
+                  <a class="black" href="#"><strong>Canada</strong> (23)</a>
                 </li>
                 <li style="text-align: left">
-                  <a class="black" href="#"
-                    ><strong>USA</strong> (67)</a
-                  >
+                  <a class="black" href="#"><strong>USA</strong> (67)</a>
                 </li>
                 <li style="text-align: left">
-                  <a class="black" href="#"
-                    ><strong>Mexico</strong> (10)</a
-                  >
+                  <a class="black" href="#"><strong>Mexico</strong> (10)</a>
                 </li>
               </ul>
               <ul class="ul-arrow">
                 <li style="text-align: left">
-                  <a class="black" href="#"
-                    ><strong>Canada</strong> (23)</a
-                  >
+                  <a class="black" href="#"><strong>Canada</strong> (23)</a>
                 </li>
                 <li style="text-align: left">
-                  <a class="black" href="#"
-                    ><strong>USA</strong> (67)</a
-                  >
+                  <a class="black" href="#"><strong>USA</strong> (67)</a>
                 </li>
                 <li style="text-align: left">
-                  <a class="black" href="#"
-                    ><strong>Mexico</strong> (10)</a
-                  >
+                  <a class="black" href="#"><strong>Mexico</strong> (10)</a>
                 </li>
               </ul>
             </div>
+            <a
+              rel="nofollow"
+              href="#"
+              data-quantity="1"
+              data-product_id="2062"
+              data-product_sku=""
+              class="readmore_button view_all"
+              data-aos="fade-right"
+              >View all points</a
+            >
           </div>
-          <div>><div>fvsdfgs</div></div>
+          <div class="map_wrapper" >
+            <figure class="map_figure" >
+              <div class="image-wrapper">
+                <img
+                  width="751"
+                  height="375"
+                  src="images/map.png"
+                  class="single_image"
+                  alt=""
+                  sizes="(max-width: 751px) 100vw, 751px"
+                  data-aos="fade-left"
+                />
+              </div>
+            </figure>
+          </div>
         </div>
+      </section>
 
-        <div>
-          <div
-            class="locations"
-          >
-            <div class="locations_wrapper">
-              <h3 class="header">Sale and delivery points</h3>
-              <p style="text-align: left">
-                Sed sagittis sodales lobortis. Curabitur in eleifend
-                turpis, id vehicula odio. Donec pulvinartellus eget magna
-                aliquet ultricies. Praesent gravida hendreritex, nec
-                eleifend semconvallis vitae.
-              </p>
-              <h4 class="header">Where buy our coffee:</h4>
-              </div>
-              <div class="pin_point">
-                  <div class="point_wrapper">
-                    <ul class="ul-arrow">
-                      <li style="text-align: left">
-                        <a class="black" href="#"
-                          ><strong>Canada</strong> (23)</a
-                        >
-                      </li>
-                      <li style="text-align: left">
-                        <a class="black" href="#"
-                          ><strong>USA</strong> (67)</a
-                        >
-                      </li>
-                      <li style="text-align: left">
-                        <a class="black" href="#"
-                          ><strong>Mexico</strong> (10)</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="pin_point">
-                  <div class="point_wrapper">
-                    <ul class="ul-arrow">
-                      <li style="text-align: left">
-                        <a class="black" href="#"
-                          ><strong>Brazil</strong> (96)</a
-                        >
-                      </li>
-                      <li style="text-align: left">
-                        <a class="black" href="#"
-                          ><strong>Argentina</strong> (43)</a
-                        >
-                      </li>
-                      <li style="text-align: left">
-                        <a class="black" href="#"
-                          ><strong>Europe</strong> (379)</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="pin_point">
-                  <div class="point_wrapper">
-                    <ul class="ul-arrow">
-                      <li style="text-align: left">
-                        <a class="black" href="#"
-                          ><strong>Russia</strong> (2)</a
-                        >
-                      </li>
-                      <li style="text-align: left">
-                        <a class="black" href="#"
-                          ><strong>Asia</strong> (26)</a
-                        >
-                      </li>
-                      <li style="text-align: left">
-                        <a class="black" href="#"
-                          ><strong>Australia</strong> (71)</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="vc_column-inner">
-                <div class="wpb_wrapper">
-                  <div class="btn-wrap">
-                    <a
-                      href="#"
-                      class="btn btn-default transform-default color-text-default color-hover-default"
-                      id="like_sc_button_383293763"
-                      >View all points</a
-                    >
-                  </div>
-                </div>
-              </div>
+      <section class="dealer_ship">
+        <div class="dealer-info">
+          <div class="dealer_wrapper" data-aos="fade-right">
+            <div class="background_cup">
+              <h3 style="font-size: 30px !important">More than</h3>
+              <h3 style="font-size: 120px !important" class="main_header">
+                5400
+              </h3>
+              <h3 style="font-size: 55px !important">customers</h3>
+              <h3 style="font-size: 55px !important; line-height: 20px">
+                trust us
+              </h3>
+              <div style="height: 130px"></div>
             </div>
           </div>
-          <div
-            class="wpb_animate_when_almost_visible wpb_zoomIn zoomIn wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-12 wpb_start_animation animated"
-          >
-            <div class="vc_column-inner">
-              <div class="wpb_wrapper">
-                <div class="wpb_single_image wpb_content_element vc_align_left">
-                  <figure class="wpb_wrapper vc_figure">
-                    <div class="vc_single_image-wrapper vc_box_border_grey">
-                      <img
-                        width="751"
-                        height="375"
-                        src="http://coffeeking.like-themes.com/wp-content/uploads/2017/09/map.png"
-                        class="vc_single_image-img attachment-full"
-                        alt=""
-                        srcset="
-                          http://coffeeking.like-themes.com/wp-content/uploads/2017/09/map.png         751w,
-                          http://coffeeking.like-themes.com/wp-content/uploads/2017/09/map-300x150.png 300w,
-                          http://coffeeking.like-themes.com/wp-content/uploads/2017/09/map-600x300.png 600w
-                        "
-                        sizes="(max-width: 751px) 100vw, 751px"
-                      />
-                    </div>
-                  </figure>
-                </div>
-              </div>
+          <div class="dealer_wrapper" data-aos="fade-left">
+            <h3 style="font-size: 55px !important">Become our dealer</h3>
+            <p style="text-align: left; line-height: 25px; margin-bottom: 5%">
+              Curabitur sollicitudin ultrices tortor, eget pulvinar risus cursus
+              eu. Vivamus sit amet odio massa. Vivamus dapibus elementum tellus
+              nec fermentum. Sed blandit condimentum molestie. In hac habitasse
+              platea dictumst. Etiam fringilla a elit at ornare.
+            </p>
+            <div class="dealer-btn-wrapper">
+              <a
+                rel="nofollow"
+                href="#"
+                data-quantity="1"
+                data-product_id="2062"
+                data-product_sku=""
+                class="secendory_button view_all"
+                >Become a dealer</a
+              >&nbsp;&nbsp;
+              <a
+                rel="nofollow"
+                href="#"
+                data-quantity="1"
+                data-product_id="2062"
+                data-product_sku=""
+                class="readmore_button view_all btn-border"
+                >Contact us</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="footer">
+        <div class="footer_area">
+          <div class="footer_about" data-aos="zoom-in-up">
+            <h3 class="primary-header" style="font-size: 50px">About Us</h3>
+            <p class="about_desc">
+              Pellentesque congue non augue vitae pellentesque. Morbi
+              sollicitudin eleifend rhoncus. Mauris vel nisl a massa viverra
+              sollicitudin semper a diam.
+            </p>
+          </div>
+          <div class="footer_contact" data-aos="zoom-in-up">
+            <h3 class="primary-header" style="font-size: 50px">Contact Us</h3>
+            <ul class="social-icons-list">
+              <li>
+                <i class="fa fa-map-marker" aria-hidden="true"></i>44 Danwers,
+                NY City, USA, 70-102
+              </li>
+              <li>
+                <i class="fa fa-phone" aria-hidden="true"></i>+10800-33-800; +10500-55-900
+              </li>
+              <li>
+                <a href="mycoffee@mycoffeeshop.us"
+                  > <i class="fa fa-envelope" aria-hidden="true"></i>mycoffee@mycoffeeshop.us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-social-links" data-aos="zoom-in-up">
+            <h3 class="primary-header" style="font-size: 50px">Follow Us</h3>
+            <h4>Let us be social</h4>
+            <div class="footer-social">
+              <a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+              <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+              <a href="#"><i class="fab fa-dribbble" aria-hidden="true"></i></a>
+              <a href="#"><i class="fab fa-behance" aria-hidden="true"></i></a>
             </div>
           </div>
         </div>
       </section>
     </div>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="js/mobile.js" type="text/javascript"></script>
     <script src="js/app.js" type="text/javascript"></script>
   </body>
