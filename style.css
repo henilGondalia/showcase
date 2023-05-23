@@ -57,7 +57,7 @@ body {
   background-image: url('./assets/Bread-Shop.png');
 }
 .wrap-effect .item:nth-of-type(2) {
-  background-image: url('https://cdn.dribbble.com/users/729829/screenshots/6146136/galshir-tea-biscuit_2x.png');
+  background-image: url('./assets/photo-film-gallery.png');
 }
 /* .wrap-effect .item:nth-of-type(3) {
   background-image: url('https://cdn.dribbble.com/users/729829/screenshots/4473482/galshir-dog-walker.gif');
