@@ -35,7 +35,8 @@ body {
     transition: all 0.8s ease;
 }
 .gallery-wrap .item:hover {
-  flex: 7;
+  flex: 8;
+  background-position: top;
 }
 .content-overlay{
   background: rgba(0,0,0,0.7);
@@ -58,14 +59,14 @@ body {
 .wrap-effect .item:nth-of-type(2) {
   background-image: url('https://cdn.dribbble.com/users/729829/screenshots/6146136/galshir-tea-biscuit_2x.png');
 }
-.wrap-effect .item:nth-of-type(3) {
+/* .wrap-effect .item:nth-of-type(3) {
   background-image: url('https://cdn.dribbble.com/users/729829/screenshots/4473482/galshir-dog-walker.gif');
 }
 .wrap-effect .item:nth-of-type(4) {
   background-image: url('https://cdn.dribbble.com/users/729829/screenshots/5743606/gal-shir-scooter_2x.png');
-}
+} */
 .wrap-effect .item:last-of-type {
-  background-image: url('https://cdn.dribbble.com/users/729829/screenshots/4738104/galshir-storytime.png');
+  background-image: url('./assets/Coffee-House.png');
 }
 
 @keyframes rotate {
