@@ -1,4 +1,6 @@
-/* Website template by freewebsitetemplates.com */
+:root {
+	--primary : #cb3362;
+}
 body {
 	margin: 0;
 	padding: 0;
@@ -20,6 +22,30 @@ a:active {
 }
 img {
 	border: none;
+}
+#back_to_pavilion {
+    display: grid;
+    background-color: var(--primary);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    outline: 2px solid #fff;
+    transition: outline-offset 200ms ease;
+    z-index: 1000000;
+    align-items: center;
+	justify-content: center;
+}
+#back_to_pavilion img {
+    width: 30px;
+    height: 30px
+}
+#back_to_pavilion:hover, #back_to_pavilion:active {
+    outline: 2px solid #fff;
+    outline-offset: -6px;
 }
 /*-------------------------------------------FONTS---------------------------------------------*/
 @font-face {
@@ -67,20 +93,20 @@ img {
 	float: left;
 	margin: 0 0 0 29px;
 	padding: 0;
-	width: auto;
+	width: 15%;
 }
 #header div a.logo img {
 	display: block;
 	margin: 0;
 	padding: 0;
-	width: 40%;
+	width: 100%;
 }
 #header div ul {
 	display: inline-block;
 	float: right;
 	list-style: none outside none;
 	margin: 0 auto;
-	padding: 17px 0 0;
+	padding: 25px 0 0;
 	text-align: center;
 	width: 530px;
 }
@@ -104,13 +130,13 @@ img {
 	text-transform: uppercase;
 }
 #header div ul li.selected a, #header div ul li.selected a:hover {
-	color: #cb3362;
+	color: var(--primary);
 }
 #header div ul li a:hover, #header div ul li.menu:hover ul li a {
 	color: #c8c10d;
 }
 #header div ul li ul li a {
-	color: #cb3362;
+	color: var(--primary);
 	font-family: lato-regular-webfont;
 	font-size: 15px;
 	font-weight: normal;
@@ -311,6 +337,9 @@ img {
 	padding: 0;
 	width: 80px;
 }
+.product_wrapper {
+	margin-top: 20px !important;
+}
 #body.home div.footer div ul li a.product {
 	background-position: 0 -372px;
 }
@@ -419,7 +448,7 @@ img {
 	width: 169px;
 }
 #body div.footer div h1 {
-	color: #CB3362;
+	color: var(--primary);
 	font-family: lato-regular-webfont;
 	font-size: 24px;
 	font-weight: normal;
@@ -583,7 +612,7 @@ img {
 	width: 370px;
 }
 #body div.blog .featured ul li div h1 {
-	color: #CB3362;
+	color: var(--primary);
 	font-family: lato-regular-webfont;
 	font-size: 24px;
 	font-weight: normal;
@@ -665,7 +694,7 @@ img {
 	width: 156px;
 }
 #body div.blog .featured a.load:hover {
-	background-color: #cb3362;
+	background-color: var(--primary);
 	border: none;
 	color: #ffffff;
 	height: 40px;
@@ -687,7 +716,7 @@ img {
 	width: 280px;
 }
 #body div.blog .sidebar h1, #body div.singlepost .sidebar h1 {
-	color: #CB3362;
+	color: var(--primary);
 	font-family: magra-bold-webfont;
 	font-size: 30px;
 	font-weight: normal;
@@ -706,7 +735,7 @@ img {
 	border-radius: 50%;
 }
 #body div.blog .sidebar h2, #body div.singlepost .sidebar h2 {
-	color: #CB3362;
+	color: var(--primary);
 	font-family: lato-regular-webfont;
 	font-size: 24px;
 	font-weight: normal;
@@ -781,7 +810,7 @@ img {
 	width: auto;
 }
 #body div.singlepost .featured h1 {
-	color: #CB3362;
+	color: var(--primary);
 	font-family: lato-regular-webfont;
 	font-size: 24px;
 	font-weight: normal;
@@ -875,7 +904,7 @@ img {
 	width: auto;
 }
 #body.contact div.body div div h1 {
-	color: #CB3362;
+	color: var(--primary);
 	float: left;
 	font-family: lato-regular-webfont;
 	font-size: 24px;
@@ -917,7 +946,7 @@ img {
 	width: 590px;
 }
 #body div.footer .contact h1 {
-	color: #CB3362;
+	color: var(--primary);
 	float: none;
 	font-family: lato-regular-webfont;
 	font-size: 24px;
@@ -999,7 +1028,7 @@ img {
 	width: 280px;
 }
 #body div.footer .section h1 {
-	color: #CB3362;
+	color: var(--primary);
 	display: block;
 	font-family: lato-regular-webfont;
 	font-size: 24px;
@@ -1029,7 +1058,7 @@ img {
 }
 /*----------------------------------------footer-styles---------------------------------------*/
 #footer {
-	background-color: #cb3362;
+	background-color: var(--primary);
 	margin: 0;
 	padding: 0;
 	width: 100%;

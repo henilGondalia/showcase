@@ -3,17 +3,85 @@
 * {
     box-sizing: border-box;
 }
-
 body {
     margin: 0;
     font-family: 'Caveat', serif;
     overflow: hidden;
 }
-
+#loader {
+  width: 100px;
+  height: 100px; 
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);  
+  position: absolute;
+  top: 50%;
+  left: 45%; 
+  /* z-index: 10; */
+}
+.one {
+  width: 120px;
+  height: 120px;
+  border: 2px solid #ffffff; /* f3f3f3 */ 
+  position: absolute;
+  border-radius: 50%;
+  border-right: 2px solid #9b59b6;
+  border-left: 2px solid #3498db;
+  -webkit-animation: spin-right 2s linear infinite;
+  animation: spin-right 2s linear infinite;
+}
+.two {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #ffffff; /* f3f3f3 */ 
+  position: absolute;
+  border-radius: 50%;
+  margin: 10px; 
+  border-bottom: 2px solid #e67e22;
+  border-top: 2px solid #f1c40f;
+  -webkit-animation: spin-left 1s linear infinite;
+  animation: spin-left 1s linear infinite;
+}
+.three {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #ffffff; /* f3f3f3 */ 
+  position: absolute;
+  border-radius: 50%;
+  margin: 20px; 
+  border-top: 2px solid #2ecc71;
+  -webkit-animation: spin-right 1s linear infinite;
+  animation: spin-right 1s linear infinite;
+}
 .Container {
     position: absolute;
     top: 50%;
     left: 50%;
+    visibility: hidden;
+}
+#back_to_pavilion {
+  display: grid;
+  background: #ae7cc3;
+  background: radial-gradient( 100% 100% at 100% 0%, #50a3db 0%, #ae7cc3 100% );
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  outline: 2px solid #fff;
+  transition: outline-offset 200ms ease;
+  z-index: 1000000;
+  align-items: center;
+justify-content: center;
+}
+#back_to_pavilion img {
+  width: 30px;
+  height: 30px
+}
+#back_to_pavilion:hover, #back_to_pavilion:active {
+  outline: 2px solid #fff;
+  outline-offset: -6px;
 }
 .Picture {
     display: inline-block;
@@ -88,4 +156,14 @@ body {
     width: 1.5rem;
     aspect-ratio: 1 / 1;
     vertical-align: middle;
+  }
+
+  @keyframes spin-left {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(-360deg); }
+  }
+  
+  @keyframes spin-right {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
   }

@@ -115,4 +115,4 @@ function checkArrow() {
   }
 
 // intialize aos
-AOS.init();
+AOS.init({disable: 'mobile'});

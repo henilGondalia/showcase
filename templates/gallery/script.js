@@ -1,6 +1,14 @@
 const pictures = document.querySelectorAll('.Picture');
 var previousTouch = undefined;
 
+window.onload = function loader(){
+  const container = document.querySelector('.Container');
+  const loader = document.getElementById('loader');
+  container.style.visibility = 'visible';
+  loader.style.display = 'none';
+  console.log("loaded",container)
+}
+
 function updateElementPosition(element, event) {
   var movementX, movementY;
 
