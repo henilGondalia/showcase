@@ -54,19 +54,19 @@ body {
   opacity: 1;
 }
 .wrap-effect .item:first-of-type {
-  background-image: url('./assets/Bread-Shop.png');
+  background-image: url('./assets/Coffee-House.png');
 }
 .wrap-effect .item:nth-of-type(2) {
   background-image: url('./assets/photo-film-gallery.png');
 }
-/* .wrap-effect .item:nth-of-type(3) {
-  background-image: url('https://cdn.dribbble.com/users/729829/screenshots/4473482/galshir-dog-walker.gif');
+.wrap-effect .item:nth-of-type(3) {
+  background-image: url('./assets/Eath.png');
 }
-.wrap-effect .item:nth-of-type(4) {
+/*.wrap-effect .item:nth-of-type(4) {
   background-image: url('https://cdn.dribbble.com/users/729829/screenshots/5743606/gal-shir-scooter_2x.png');
 } */
 .wrap-effect .item:last-of-type {
-  background-image: url('./assets/Coffee-House.png');
+  background-image: url('./assets/Bread-Shop.png');
 }
 
 @keyframes rotate {
